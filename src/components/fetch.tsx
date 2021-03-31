@@ -24,7 +24,7 @@ export default class Weather extends Component<Props, State> {
         }
     }
 
-    coordsAllowed = (e: any) => {
+    coordsAllowed = (e: GeolocationPosition) => {
         this.setState({
             latitude: Math.round(e.coords.latitude),
             longitude: Math.round(e.coords.longitude)

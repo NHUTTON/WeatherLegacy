@@ -1,6 +1,11 @@
 import React from "react";
 
-const WeatherDisplay = (props) => {
+type Props = {
+  location: string,
+  weather: number
+}
+
+const WeatherDisplay = (props: Props) => {
     console.log(props)
     return (
         <div>
